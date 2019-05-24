@@ -79,6 +79,8 @@ class CreateProjectCommand extends BaseCommand
                 new InputOption('remove-vcs', null, InputOption::VALUE_NONE, 'Whether to force deletion of the vcs folder without prompting.'),
                 new InputOption('no-install', null, InputOption::VALUE_NONE, 'Whether to skip installation of the package dependencies.'),
                 new InputOption('ignore-platform-reqs', null, InputOption::VALUE_NONE, 'Ignore platform requirements (php & ext- packages).'),
+                new InputOption('auto-ext-loader',null,InputOption::VALUE_NONE,'Installs any missing extension for required packages'),
+
             ))
             ->setHelp(
                 <<<EOT
